@@ -1,9 +1,8 @@
 pkgbase = systemd-gadget
 	pkgdesc = USB gadget setup scripts for systemd
-	pkgver = 0.0.2
+	pkgver = 0.0.3
 	pkgrel = 1
 	url = https://github.com/BigfootACA/systemd-gadget
-	install = systemd-gadget.install
 	arch = any
 	license = GPL
 	depends = bash
