@@ -2,7 +2,7 @@
 # Maintainer: BigfootACA <bigfoot@classfun.cn>
 
 pkgname=systemd-gadget
-pkgver=0.0.3
+pkgver=0.0.5
 pkgrel=1
 pkgdesc="USB gadget setup scripts for systemd"
 arch=(any)
@@ -20,6 +20,7 @@ backup=(
 	etc/default/gadget
 )
 source=(
+	adbd-usb.service
 	gadget
 	gadget-init.sh
 	gadget-mac.sh
@@ -51,7 +52,8 @@ source=(
 	usbgadget-func-uvc.service
 	dev-usb-ffs-adb.mount
 )
-md5sums=('5c34a543424c246263b9e4bf961cf650'
+md5sums=('9a07ecf98af1bedad50f2cf69dd94225'
+         '5c34a543424c246263b9e4bf961cf650'
          '0f912dd210e2affc231a4082a024a47f'
          'eb175e114aaa4b1791d7bff33550ddc7'
          'fa5269709b700b9f93c3d194ef87e179'
@@ -81,7 +83,8 @@ md5sums=('5c34a543424c246263b9e4bf961cf650'
          '1236ca4bbdd2f2547728381a25f564fb'
          'e2d0621f7ecf5685b98c1514a8383eec'
          '08de439dcefd887461cea6d6e93133d9')
-sha256sums=('59d3dc74ee55eafa41b639173ad4d3ccba8dbd83ceed46ab79851bbd40eb5faf'
+sha256sums=('fad1139d88f6fc99b9104b4660a03339d3f08eb13650a857b03883a2d3f98ff7'
+            '59d3dc74ee55eafa41b639173ad4d3ccba8dbd83ceed46ab79851bbd40eb5faf'
             '197c070a5076cf31ee8e673a202bd7a6bcd0d3820e96db10b39553ebeaf0a1bc'
             '9cfaee753fc530ef806cd1272ce4fcfbfeb0d271c8321160e972264c635d12f3'
             '3afcf1c724d6feb3acd40df81eba7eb5d2bf1cf505cc59ac7e440d84084619cc'
@@ -111,7 +114,8 @@ sha256sums=('59d3dc74ee55eafa41b639173ad4d3ccba8dbd83ceed46ab79851bbd40eb5faf'
             '0524195accf20bdfaa93f93efa8d8633a99dfeba03b607c09fd9546f487a1550'
             'e12ebf69ad91de22788246eae5878d21e6593168f668f9eacbb85ff6a8eb5e67'
             '2afaca785c003954fa205729542c21bd8465210494eb12bb0cc0f11e3a8843e2')
-sha512sums=('a70667519c6e984c13769d9d44c2f156067c3d38752593c8444391800b39c7dc03963de908555b879fd7f87c1a6a598624cb90693c6e40331e2b2a8910362d72'
+sha512sums=('2347dd0186fd1f96418f358435ea3fd068d6f236b1ef06d3f39ba81cc4eea5a3aecfe883d9fbbe78948dd4707f358230b4add662c1635845942428820751a2e8'
+            'a70667519c6e984c13769d9d44c2f156067c3d38752593c8444391800b39c7dc03963de908555b879fd7f87c1a6a598624cb90693c6e40331e2b2a8910362d72'
             '80aa317dad5f4c191008dc05cfc1ab109370c5d7c89f0d6d263a4fd2c1c2d711df065817ceb4ea38d98399eeace8081c847acb451ad4db40bb4cf9b8fde9d54c'
             '3c750960252670d6adeeb07e5f5ddecacaf9498303f8d75a0cded2a0c8f0da5a8351b4e54c186ae91f49f8f8840cc37d68d3f131ecc5ebb2776e520df5e8f3f8'
             'ddd0094ee66b563b6bbce5fb9b2919bd4be51a71462a2127bd51d4fb84873cdd3d4f4879aeb16710ebca29104559ffb7f8fc354101c0490309b9b78dfc287037'
